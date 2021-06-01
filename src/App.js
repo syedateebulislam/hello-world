@@ -8,10 +8,16 @@ function App() {
   return (
     <div className="App">
 
-      <Greet/>
-      <Welcome/>  
-      <Hello/>
+      <Greet name="arif" surname="Jamal"></Greet>
+      <Greet name="syed" surname="islam"></Greet>
+      <Greet name="Md" surname="aqib"></Greet>
 
+      <Welcome name="arif" surname="Jamal"></Welcome>
+      <Welcome name="syed" surname="islam"></Welcome>
+      <Welcome name="Md" surname="aqib"></Welcome>
+      
+      {/*<Hello/>*/}
+      
     </div>
   );
 }
