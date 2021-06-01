@@ -2,13 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './Components/Greet';
 import Welcome from './Components/Welcome';
-import Hello from './Components/Hello'
+import Hello from './Components/Hello';
+import Message from './Components/Message'
+
+
 
 function App() {
   return (
     <div className="App">
 
-      <Greet name="arif" surname="Jamal"></Greet>
+      <Greet name="arif" surname="Jamal">
+      <button>subscribe</button>
+      </Greet>
       <Greet name="syed" surname="islam"></Greet>
       <Greet name="Md" surname="aqib"></Greet>
 
@@ -16,6 +21,8 @@ function App() {
       <Welcome name="syed" surname="islam"></Welcome>
       <Welcome name="Md" surname="aqib"></Welcome>
       
+      <Message></Message>
+
       {/*<Hello/>*/}
       
     </div>
