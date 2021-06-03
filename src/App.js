@@ -12,16 +12,16 @@ function App() {
   return (
     <div className="App">
 
-      <Counter/>
+      {/*<Counter/>*/}
       {/*<Greet name="arif" surname="Jamal">
       <button>subscribe</button>
       </Greet>
       <Greet name="syed" surname="islam"></Greet>
-      <Greet name="Md" surname="aqib"></Greet>
+      <Greet name="Md" surname="aqib"></Greet>*/}
 
       <Welcome name="arif" surname="Jamal"></Welcome>
       <Welcome name="syed" surname="islam"></Welcome>
-      <Welcome name="Md" surname="aqib"></Welcome>*/}
+      <Welcome name="Md" surname="aqib"></Welcome>
       
       {/*<Message></Message>*/}
 
