@@ -5,13 +5,15 @@ import Welcome from './Components/Welcome'
 import Hello from './Components/Hello'
 import Message from './Components/Message'
 import Counter from './Components/Counter'
-
-
+import FunctionClick from './Components/FunctionClick'
+import ClassClick from './Components/ClassClick'
 
 function App() {
   return (
     <div className="App">
 
+      <FunctionClick/>
+      <ClassClick/>
       {/*<Counter/>*/}
       {/*<Greet name="arif" surname="Jamal">
       <button>subscribe</button>
@@ -19,9 +21,9 @@ function App() {
       <Greet name="syed" surname="islam"></Greet>
       <Greet name="Md" surname="aqib"></Greet>*/}
 
-      <Welcome name="arif" surname="Jamal"></Welcome>
+      {/*<Welcome name="arif" surname="Jamal"></Welcome>
       <Welcome name="syed" surname="islam"></Welcome>
-      <Welcome name="Md" surname="aqib"></Welcome>
+      <Welcome name="Md" surname="aqib"></Welcome>*/}
       
       {/*<Message></Message>*/}
 
