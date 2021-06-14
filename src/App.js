@@ -12,12 +12,22 @@ import ParentComponent from './Components/ParentComponent';
 import UserGreeting from './Components/UserGreeting';
 import NameList from './Components/NameList';
 import NameList_1 from './Components/NameList_1';
+import Stylesheets from './Components/Stylesheets';
+import Inline from './Components/Inline';
+import './appStyles.css';
+import styles from './appStyles.module.css'
+
 
 function App() {
   return (
     <div className="App">
 
-      <NameList_1/>
+      <h1 className='error'>error</h1>
+      <h1 className={styles.success}>success</h1>
+      <Inline/>
+      
+      {/*<Stylesheets primary = {true}/>*/}
+      {/*<NameList_1/>*/}
       {/*<NameList/>*/}
       {/*<UserGreeting/>*/}
       {/*<ParentComponent/>*/}
