@@ -5,6 +5,11 @@ import React from 'react'
         color : 'blue'
     }
 
+{/*
+simple .css file can get overwrite or mishandled any time-like error class.
+But .module.css file will only work within it's scope.Like its working on app.js but not here.
+*/}
+
 function Inline() {
     return (
         <div>
