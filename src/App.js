@@ -16,14 +16,19 @@ import './App.css';
 // import Inline from './Components/Inline';
 // import './appStyles.css';
 // import styles from './appStyles.module.css'
-import Form from './Components/Form';
-
+//import Form from './Components/Form';
+import FragmentDemo from './Components/FragmentDemo';
+import Table from './Components/Table';
 
 function App() {
   return (
     <div className="App">
 
-      <Form/>
+      <Table/>
+
+      {/*<FragmentDemo/>*/}
+
+      {/*<Form/>*/}
 
       {/*<h1 className='error'>error</h1>
       <h1 className={styles.success}>success</h1>
