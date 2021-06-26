@@ -21,14 +21,17 @@ import './App.css';
 //import Table from './Components/Table';
 //import ParentComp from './Components/ParentComp';
 //import Refs from './Components/Refs';
-import FocusInput from './Components/FocusInput';
+//import FocusInput from './Components/FocusInput';
+import PortalDemo from './Components/PortalDemo';
+
 
 function App() {
   return (
     <div className="App">
 
-      <FocusInput/>
+      <PortalDemo/>
 
+      {/*<FocusInput/>*/}
       {/*<Refs/>*/}
       {/*<ParentComp/>*/}
       {/*<Table/>*/}
