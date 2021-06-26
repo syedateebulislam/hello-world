@@ -22,15 +22,25 @@ import './App.css';
 //import ParentComp from './Components/ParentComp';
 //import Refs from './Components/Refs';
 //import FocusInput from './Components/FocusInput';
-import PortalDemo from './Components/PortalDemo';
-
+//import PortalDemo from './Components/PortalDemo';
+import Hero from './Components/Hero';
+import ErrorBoundry from './Components/ErrorBoundry';
 
 function App() {
   return (
     <div className="App">
+      
+      <ErrorBoundry>
+      <Hero heroName='IronMan'/>
+      </ErrorBoundry>
+      <ErrorBoundry>
+      <Hero heroName='batman'/>
+      </ErrorBoundry>
+      <ErrorBoundry>
+      <Hero heroName='Joker'/>
+      </ErrorBoundry>
 
-      <PortalDemo/>
-
+      {/*<PortalDemo/>*/}
       {/*<FocusInput/>*/}
       {/*<Refs/>*/}
       {/*<ParentComp/>*/}
@@ -54,13 +64,10 @@ function App() {
       </Greet>
       <Greet name="syed" surname="islam"></Greet>
       <Greet name="Md" surname="aqib"></Greet>*/}
-
       {/*<Welcome name="arif" surname="Jamal"></Welcome>
       <Welcome name="syed" surname="islam"></Welcome>
-      <Welcome name="Md" surname="aqib"></Welcome>*/}
-      
+      <Welcome name="Md" surname="aqib"></Welcome>*/}     
       {/*<Message></Message>*/}
-
       {/*<Hello/>*/}
       
     </div>
