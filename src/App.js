@@ -20,26 +20,23 @@ import './App.css';
 //import FragmentDemo from './Components/FragmentDemo';
 //import Table from './Components/Table';
 //import ParentComp from './Components/ParentComp';
-import Refs from './Components/Refs';
+//import Refs from './Components/Refs';
+import FocusInput from './Components/FocusInput';
 
 function App() {
   return (
     <div className="App">
 
-      <Refs/>
+      <FocusInput/>
 
+      {/*<Refs/>*/}
       {/*<ParentComp/>*/}
-
       {/*<Table/>*/}
-
       {/*<FragmentDemo/>*/}
-
       {/*<Form/>*/}
-
       {/*<h1 className='error'>error</h1>
       <h1 className={styles.success}>success</h1>
       <Inline/>*/}
-      
       {/*<Stylesheets primary = {true}/>*/}
       {/*<NameList_1/>*/}
       {/*<NameList/>*/}
