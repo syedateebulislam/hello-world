@@ -17,14 +17,17 @@ import './App.css';
 // import './appStyles.css';
 // import styles from './appStyles.module.css'
 //import Form from './Components/Form';
-import FragmentDemo from './Components/FragmentDemo';
-import Table from './Components/Table';
+//import FragmentDemo from './Components/FragmentDemo';
+//import Table from './Components/Table';
+import ParentComp from './Components/ParentComp';
 
 function App() {
   return (
     <div className="App">
 
-      <Table/>
+      <ParentComp/>
+
+      {/*<Table/>*/}
 
       {/*<FragmentDemo/>*/}
 
