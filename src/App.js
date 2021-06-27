@@ -23,14 +23,21 @@ import './App.css';
 //import Refs from './Components/Refs';
 //import FocusInput from './Components/FocusInput';
 //import PortalDemo from './Components/PortalDemo';
-import Hero from './Components/Hero';
-import ErrorBoundry from './Components/ErrorBoundry';
+//import Hero from './Components/Hero';
+//import ErrorBoundry from './Components/ErrorBoundry';
+import ClickCounterz from './Components/ClickCounterz';
+import HoverCounter from './Components/HoverCounter';
+import WithCounter from './Components/withCounter';
+
 
 function App() {
   return (
     <div className="App">
       
-      <ErrorBoundry>
+      <ClickCounterz name='ateeb'/><br/>
+      <HoverCounter/>
+
+      {/*<ErrorBoundry>
       <Hero heroName='IronMan'/>
       </ErrorBoundry>
       <ErrorBoundry>
@@ -38,7 +45,7 @@ function App() {
       </ErrorBoundry>
       <ErrorBoundry>
       <Hero heroName='Joker'/>
-      </ErrorBoundry>
+      </ErrorBoundry>*/}
 
       {/*<PortalDemo/>*/}
       {/*<FocusInput/>*/}
