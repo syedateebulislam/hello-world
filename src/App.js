@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 // import Greet from './Components/Greet'
 // import Welcome from './Components/Welcome'
@@ -28,23 +28,31 @@ import './App.css';
 // import ClickCounterz from './Components/ClickCounterz';
 // import HoverCounter from './Components/HoverCounter';
 // import WithCounter from './Components/withCounter';
-import HoverCounterTwo from './Components/HoverCounterTwo';
-import User from './Components/User';
-import ClickCounterTwo from './Components/ClickCounterTwo';
-import CounterTwo from './Components/CounterTwo';
+//import User from './Components/User';
+//import HoverCounterTwo from './Components/HoverCounterTwo';
+//import ClickCounterTwo from './Components/ClickCounterTwo';
+//import CounterTwo from './Components/CounterTwo';
+import CompC from './Components/CompC';
+import { UserProvider } from './Components/userContext';
+import userContext from './Components/userContext';
 
 function App() {
   return (
     <div className="App">
-      
-      <CounterTwo render={ (count,incrementCount) => 
+    
+    <UserProvider value="ateeb">
+      <CompC/>
+    </UserProvider>
+
+    {/*
+        <CounterTwo render={ (count,incrementCount) => 
         (<ClickCounterTwo count={count} incrementCount={incrementCount}/>
         )}/>
 
         <CounterTwo render={ (count,incrementCount) => 
           (<HoverCounterTwo count={count} incrementCount={incrementCount}/>
           )}/>
-  
+      */}
 
       {/*<ClickCounterTwo/>
       <HoverCounterTwo/>
@@ -62,7 +70,6 @@ function App() {
       <ErrorBoundry>
       <Hero heroName='Joker'/>
       </ErrorBoundry>*/}
-
       {/*<PortalDemo/>*/}
       {/*<FocusInput/>*/}
       {/*<Refs/>*/}
