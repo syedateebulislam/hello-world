@@ -25,18 +25,34 @@ import './App.css';
 //import PortalDemo from './Components/PortalDemo';
 //import Hero from './Components/Hero';
 //import ErrorBoundry from './Components/ErrorBoundry';
-import ClickCounterz from './Components/ClickCounterz';
-import HoverCounter from './Components/HoverCounter';
-import WithCounter from './Components/withCounter';
-
+// import ClickCounterz from './Components/ClickCounterz';
+// import HoverCounter from './Components/HoverCounter';
+// import WithCounter from './Components/withCounter';
+import HoverCounterTwo from './Components/HoverCounterTwo';
+import User from './Components/User';
+import ClickCounterTwo from './Components/ClickCounterTwo';
+import CounterTwo from './Components/CounterTwo';
 
 function App() {
   return (
     <div className="App">
       
-      <ClickCounterz name='ateeb'/><br/>
-      <HoverCounter/>
+      <CounterTwo render={ (count,incrementCount) => 
+        (<ClickCounterTwo count={count} incrementCount={incrementCount}/>
+        )}/>
 
+        <CounterTwo render={ (count,incrementCount) => 
+          (<HoverCounterTwo count={count} incrementCount={incrementCount}/>
+          )}/>
+  
+
+      {/*<ClickCounterTwo/>
+      <HoverCounterTwo/>
+      <User render={(isLoggedIn) => isLoggedIn ? "ateeb" : "guest"}/>
+      */}
+
+      {/*<ClickCounterz name='ateeb'/><br/>
+      <HoverCounter/>*/}
       {/*<ErrorBoundry>
       <Hero heroName='IronMan'/>
       </ErrorBoundry>
